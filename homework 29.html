@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="pink">
+    <h1> JAVASCRIPT ASYNC AND AWAIT</h1>
+
+    <p id="p1"> </p>
+    <p id="p2"></p>
+
+    <script>
+        async function mul(a, b, c) {
+            let response = await a*b*c;
+            displaymul(response);
+        }
+
+        function displaymul(sum) {
+            document.getElementById("p1").innerHTML = sum;
+        }
+        mul(4, 6, 2);
+
+        
+            async function add(a, b) {
+                    let response = await a + b;
+                    displayadd(response);
+                }
+                function displayadd(sum) {
+                    document.getElementById("p2").innerHTML = sum;
+                }
+                add(4, 4);
+    </script>
+</body>
+
+</html>
